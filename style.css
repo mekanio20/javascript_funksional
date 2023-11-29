@@ -1,0 +1,164 @@
+/* Default */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 60%;
+    margin: 90px 0;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+/* Header */
+
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px 20px 0 0;
+    padding: 10px 30px;
+}
+
+.header__logo {
+    font-family: "Franklin Gothic Medium";
+    background-color: rgb(255, 255, 0);
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.header__search {
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Main */
+
+.main {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.table__container {
+    flex: 3;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    height: 70px;
+    font-family: "Franklin Gothic Medium";
+    border-bottom: 2px solid black;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+}
+
+tr:hover td {
+    cursor: pointer;
+    background-color: #efefef;
+}
+
+/* Aside */
+
+.aside {
+    flex: 1;
+    border-left: 2px solid black;
+}
+
+.aside__header {
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+}
+
+.aside__header-title {
+    font-family: 'Calibri';
+}
+
+.aside__title {
+    font-size: 26px;
+    padding: 15px 0;
+    font-family: 'Calibri';
+    text-align: center;
+}
+
+.aside__button {
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 3px 11px;
+}
+
+.aside__button:hover {
+    background-color: #eee;
+}
+
+.aside__select {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.aside__body {
+    display: block;
+}
+
+.aside__genre {
+    padding: 0 30px 20px 60px;
+}
+
+.aside__genre-item {
+    display: block;
+    padding: 10px;
+}
+
+.aside__genre-item:hover {
+    background-color: #eee;
+}
+
+.aside__item_checkbox {
+    margin-right: 10px;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid black;
+}
+
+.footer__item {
+    border-radius: 50%;
+    padding: 5px 11px;
+    margin-right: 5px;
+    border: 1px solid black;
+    background-color: yellow;
+}

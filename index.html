@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="header__logo">IMDb</div>
+                <input class="header__search" type="search" placeholder="Search" onkeyup="search(this)">
+            </header>
+            <main class="main">
+                <div class="table__container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Genre</th>
+                                <th>Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+                <aside class="aside">
+                    <div class="aside__header">
+                        <h4 class="aside__header-title">Sort By:</h4>
+                        <select class="aside__select" id="select" onchange="selectValue()">
+                            <option value="Rating">Rating</option>
+                            <option value="Title">Title</option>
+                            <option value="Year">Year</option>
+                        </select>
+                        <button class="aside__button" id="reverse" onclick="reversed()">
+                            <img src="./images/up-down-solid.svg" alt="icon" width="8px">
+                        </button>
+                    </div>
+                    <div class="aside__body">
+                        <h2 class="aside__title">Movies By Genre</h2>
+                        <div class="aside__genre" id="genre"></div>
+                    </div>
+                </aside>
+            </main>
+            <footer class="footer">
+                <span class="footer__item">1</span>
+                <span class="footer__item">2</span>
+                <span class="footer__item">3</span>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
